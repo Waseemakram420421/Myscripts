@@ -1,13 +1,11 @@
 #!/bin/sh
-sh Installjenkins.sh
-sh Git install.sh
-sh Ansible_install.sh
-sh Maven_install.sh
-sh Sonarscanner_install.sh
-echo "==================== Jenkins |  Git |  Ansible |  Maven  |  SonarCLI  =================="
+sh git_install.sh 
+sh ansible_install.sh
+sh maven_install.sh
+sh sonarcli.sh
 
-echo -e "\n \n \n  ===================== Jenkins install verification======================================"
-sudo systemctl status jenkins
+echo "====================   Git |  Ansible |  Maven  |  SonarCLI  =================="
+
 echo -e "\n \n \n  ===================== Git install verification======================================"
 sudo git --version
 echo -e "\n \n \n  ===================== Ansible install verification======================================"
