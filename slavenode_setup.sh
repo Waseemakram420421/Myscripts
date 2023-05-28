@@ -1,4 +1,5 @@
 #!/bin/sh
+chmod 777 ansible_install.sh dummyscript.sh git_install.sh maven_install.sh sonarcli.sh
 sh git_install.sh 
 sh ansible_install.sh
 sh maven_install.sh
